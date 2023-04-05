@@ -1,0 +1,57 @@
+Desenvolvimento 1
+Aluno: Alex Barros
+Data: 05/04/2023.
+
+REQUEST - REQUISIÇÃO:
+
+POST /consultaCliente HTTP/1.1
+Host: www.minhaempresa.com
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: nnn
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding">
+<!— Elemento raiz do SOAP e define que essa é uma mensagem SOAP-->
+
+<soap:Header>
+	<a:authentication
+	xmlns:a="http://www.minhaempresa.com/soap/authentication"
+	soap:actor="htt://www.minhaempresa.com/soap/authenticator">
+		<a:username>minhaempresa</a:username>
+		<a:password>empresa123</a:password>
+	</a:authentication>
+</soap:Header>
+<!—Especifica informações especificas como autenticação (opcional)-->
+
+<soap:Body xmlns:m="http://www.minhaempresa.com/consultaCliente">
+	<m:consultaClienteRequest>
+		<m:cpf>33333333322</m:cpf>
+	</m:consultaClienteRequest>
+</soap:Body>
+<!—O elemento BODY contém o corpo da mensagem-->
+
+</soap:Envelope>
+
+RESPONSE - RESPOSTA:
+
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: nnn
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding">
+
+<soap:Body xmlns:m="http://www.minhaempresa.com/consultaCliente">
+	<m:consultaClienteResponse>
+		<m:nome>João da Silva</m:nome>
+		<m:endereco>Rua Paraiso,s/n Lagoa Grande</m:endereco>
+		<m:numeroTelefone>81999998888</m:numeroTelefone>
+	</m:consultaClienteResponse>
+</soap:Body>
+
+</soap:Envelope>
+
