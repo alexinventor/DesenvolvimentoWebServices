@@ -1,0 +1,23 @@
+Desenvolvimento 2
+Aluno: Alex Barros
+Data: 08/04/2023.
+
+HTTP sendo um protocolo de comunicação que define regras e utiliza 
+métodos de requisição de recurso ao servidor, através do modelo 
+cliente-sevidor em que o cliente é o navegador.
+São oito os métodos de requisição, cujos mais utilizados são GET, POST, 
+PUT e DELETE. Como exemplo: GET http://...,em que a requisição informa 
+ao endereço de destino(sevidor), que necessita de um recurso. O servidor 
+responde com a versão do HTTP e o status: HTTP/1.1 200 OK.
+O método POST é utilizado para enviar algum dado novo ou informação, já o 
+PUT edita dados existentes e o DELETE remove. Temos também o Head que, 
+sendo parecido com o GET, retorna só o cabeçalho da resposta; O OPTIONS 
+retorna informações relativas ao servidor; O TRACE reenvia a última 
+solicitação para o servidor, observando se há interferência de outros 
+servidores; O CONNECT faz a conexão do API com servidor proxy. 
+Observação: tanto o PUT quanto o DELETE usa um parâmetro no end-point(URL) 
+da requisição, para informar, o usuário que será editado ou deletado.
+O WSDL(Linguagem de Descrição de Serviços Web) é uma descrição Web Service 
+em XML e que usa os protocolos SOAP e RPC. Através do WSDL se diz para o 
+cliente como os serviços no end-point serão invocados, os parâmetros, o tipo 
+de dado se espera e qual o dado de resposta terá o retorno.
