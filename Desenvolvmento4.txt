@@ -1,0 +1,39 @@
+Desenvolvimento 4
+Aluno: Alex Barros
+Data: 10/04/2023.
+
+Para ser uma API REST, a API deve cumprir seis regras 
+conhecidas como "restrições de arquitetura":
+
+1. Ausência de estado (stateless)
+Toda solicitação do cliente terá que possuir as informações 
+completas para serem tratadas. Dispõe um URL para verificação 
+do recurso e do corpo afim de garantir o estado do recurso 
+requisitado. Com isto haverá no corpo, status ou cabeçalhos um 
+resultado após o servidor efetuar o que foi pedido.
+
+2. Sistema cliente-servidor
+Essa regra demanda para as aplicações cliente e servidor, uma 
+total separação tornando-os independentes umas das outras. 
+Limitando apenas ao conhecimento do nome completo do recurso para 
+o cliente, possibilitando, para diversas plataformas, a portabilidade.
+
+3. Interface uniforme
+As solicitações terão que atender as regras de formatação. A despeito 
+do cliente que solicita, cada elemento de informação deve ser inserido
+semelhante ao que outro efetuaria, como identificação ou manipulação dos 
+recursos, mensagens que se descrevem e hipermídia.
+
+4. Armazenamento em cache
+Ao contrário da falta de estado por cliente do servidor, podendo os 
+recursos serem acomodados no cliente e servidor em um ou mais pontos. 
+
+5. Arquitetura de sistema por camadas
+Consequentemente da separação cliente-servidor, da falta de estado e do 
+armazenamento em cache, um cliente não tem como saber se está em conexão 
+através do servidor que possa disponibilizar o recurso necessitado. Isso faz 
+com que seja restringido o procedimento dos componentes em diversas camadas.
+
+6. Código sob demanda
+É o código entregue e executado dentro do aplicativo a pedido do cliente, 
+já que na condição normal é a entrega apenas de dados.
