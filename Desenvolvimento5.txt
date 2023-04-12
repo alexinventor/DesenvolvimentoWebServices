@@ -1,0 +1,33 @@
+Desenvolvimento 5
+Aluno: Alex Barros
+Data: 12/04/2023.
+
+Operações CRUD
+
+Create: Permite criar
+Rota: POST http://localhost:8080/books
+{
+	"name": "O alquimista",
+	"author": "Paulo Coelho",
+	"ISBN": "853250325X"
+}
+
+Read: Permite ler
+Rota: GET http://localhost:8080/books
+{
+	"name": "O alquimista",
+	"author": "Paulo Coelho",
+	"ISBN": "853250325X"
+}
+	
+Update: Permite atualizar
+Rota: PUT http://localhost:8080/books/:id
+{
+	"id": 333,
+	"name": "O alquimista",
+	"author": "Paulo Coelho",
+	"ISBN": "853250325X"
+}
+
+Delete: Permite deletar
+Rota: DELETE http://localhost:8080/books/:id
